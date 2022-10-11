@@ -3,7 +3,8 @@
 const button = document.getElementById("button");
 // document.getElementsByTagName('body').style.display = 'flex';
 let yearsCalculator = (year) => {
-  year = prompt("Nhập số tuổi của bạn:");
+  // year = prompt("Nhập số tuổi của bạn:");
+  year = document.getElementById("input").value;
   let sentence = "";
   if (year < 18 && year > 0) {
     sentence = `Tuổi của bạn là ${year}.`;
